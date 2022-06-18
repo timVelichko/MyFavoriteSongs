@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  MyFavoriteSongs
+
+  Created by Tim Velichko on 18.06.2022.
+  
+*/
+
+"songsSearch.title" = "Search";
+"favoriteSongs.title" = "Favorites";

@@ -34,7 +34,7 @@ struct SongsSearchView: View {
     var body: some View {
         NavigationView {
             SongsGrid(songs)
-                .navigationTitle("Search")
+                .navigationTitle("songsSearch.title")
                 .toolbar {
                     NavigationLink(destination: FavoriteSongsView(), label: {
                         Text("\(Image(systemName: "star.fill"))")

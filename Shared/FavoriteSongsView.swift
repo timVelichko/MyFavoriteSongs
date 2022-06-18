@@ -11,7 +11,7 @@ struct FavoriteSongsView: View {
     
     var body: some View {
         SongsGrid([])
-            .navigationTitle("Favorites")
+            .navigationTitle("favoriteSongs.title")
     }
     
 }
