@@ -13,10 +13,13 @@
 		92C0B81F285B445B007C77E1 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B81E285B445B007C77E1 /* Tests_macOSLaunchTests.swift */; };
 		92C0B820285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F8285B4457007C77E1 /* MyFavoriteSongsApp.swift */; };
 		92C0B821285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F8285B4457007C77E1 /* MyFavoriteSongsApp.swift */; };
-		92C0B822285B445B007C77E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F9285B4457007C77E1 /* ContentView.swift */; };
-		92C0B823285B445B007C77E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F9285B4457007C77E1 /* ContentView.swift */; };
+		92C0B822285B445B007C77E1 /* SongsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */; };
+		92C0B823285B445B007C77E1 /* SongsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */; };
 		92C0B824285B445B007C77E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C0B7FA285B445B007C77E1 /* Assets.xcassets */; };
 		92C0B825285B445B007C77E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C0B7FA285B445B007C77E1 /* Assets.xcassets */; };
+		92C0B836285B6856007C77E1 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 92C0B835285B6856007C77E1 /* QGrid */; };
+		92DD9D3F285D9883009A3F8E /* SongsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D3E285D9883009A3F8E /* SongsGrid.swift */; };
+		92DD9D40285D9883009A3F8E /* SongsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D3E285D9883009A3F8E /* SongsGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		92C0B7F8285B4457007C77E1 /* MyFavoriteSongsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteSongsApp.swift; sourceTree = "<group>"; };
-		92C0B7F9285B4457007C77E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsSearchView.swift; sourceTree = "<group>"; };
 		92C0B7FA285B445B007C77E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92C0B7FF285B445B007C77E1 /* MyFavoriteSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavoriteSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C0B805285B445B007C77E1 /* MyFavoriteSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavoriteSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +52,7 @@
 		92C0B818285B445B007C77E1 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C0B81C285B445B007C77E1 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		92C0B81E285B445B007C77E1 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		92DD9D3E285D9883009A3F8E /* SongsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C0B836285B6856007C77E1 /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				92C0B7F8285B4457007C77E1 /* MyFavoriteSongsApp.swift */,
-				92C0B7F9285B4457007C77E1 /* ContentView.swift */,
+				92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */,
+				92DD9D3E285D9883009A3F8E /* SongsGrid.swift */,
 				92C0B7FA285B445B007C77E1 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -157,6 +163,9 @@
 			dependencies = (
 			);
 			name = "MyFavoriteSongs (iOS)";
+			packageProductDependencies = (
+				92C0B835285B6856007C77E1 /* QGrid */,
+			);
 			productName = "MyFavoriteSongs (iOS)";
 			productReference = 92C0B7FF285B445B007C77E1 /* MyFavoriteSongs.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +258,9 @@
 				Base,
 			);
 			mainGroup = 92C0B7F2285B4457007C77E1;
+			packageReferences = (
+				92C0B834285B6856007C77E1 /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = 92C0B800285B445B007C77E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,7 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C0B822285B445B007C77E1 /* ContentView.swift in Sources */,
+				92DD9D3F285D9883009A3F8E /* SongsGrid.swift in Sources */,
+				92C0B822285B445B007C77E1 /* SongsSearchView.swift in Sources */,
 				92C0B820285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C0B823285B445B007C77E1 /* ContentView.swift in Sources */,
+				92DD9D40285D9883009A3F8E /* SongsGrid.swift in Sources */,
+				92C0B823285B445B007C77E1 /* SongsSearchView.swift in Sources */,
 				92C0B821285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,6 +715,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92C0B834285B6856007C77E1 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92C0B835285B6856007C77E1 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92C0B834285B6856007C77E1 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92C0B7F3285B4457007C77E1 /* Project object */;
 }

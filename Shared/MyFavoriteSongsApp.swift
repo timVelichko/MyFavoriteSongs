@@ -11,7 +11,7 @@ import SwiftUI
 struct MyFavoriteSongsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SongsSearchView()
         }
     }
 }
