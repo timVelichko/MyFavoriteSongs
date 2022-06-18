@@ -59,7 +59,6 @@
 		92DD9D3E285D9883009A3F8E /* SongsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsGrid.swift; sourceTree = "<group>"; };
 		92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSongsView.swift; sourceTree = "<group>"; };
 		92DD9D5C285DA357009A3F8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		92DD9D5E285DA429009A3F8E /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +97,6 @@
 		92C0B7F2285B4457007C77E1 = {
 			isa = PBXGroup;
 			children = (
-				92DD9D5E285DA429009A3F8E /* swiftgen.yml */,
 				92C0B7F7285B4457007C77E1 /* Shared */,
 				92C0B806285B445B007C77E1 /* macOS */,
 				92C0B80F285B445B007C77E1 /* Tests iOS */,
