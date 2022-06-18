@@ -20,6 +20,8 @@
 		92C0B836285B6856007C77E1 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 92C0B835285B6856007C77E1 /* QGrid */; };
 		92DD9D3F285D9883009A3F8E /* SongsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D3E285D9883009A3F8E /* SongsGrid.swift */; };
 		92DD9D40285D9883009A3F8E /* SongsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D3E285D9883009A3F8E /* SongsGrid.swift */; };
+		92DD9D42285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */; };
+		92DD9D43285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		92C0B81C285B445B007C77E1 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		92C0B81E285B445B007C77E1 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		92DD9D3E285D9883009A3F8E /* SongsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsGrid.swift; sourceTree = "<group>"; };
+		92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSongsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +107,10 @@
 			children = (
 				92C0B7F8285B4457007C77E1 /* MyFavoriteSongsApp.swift */,
 				92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */,
+				92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */,
 				92DD9D3E285D9883009A3F8E /* SongsGrid.swift */,
 				92C0B7FA285B445B007C77E1 /* Assets.xcassets */,
+				92DD9D44285D9E65009A3F8E /* Resources */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -145,6 +150,13 @@
 				92C0B81E285B445B007C77E1 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		92DD9D44285D9E65009A3F8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +326,7 @@
 				92DD9D3F285D9883009A3F8E /* SongsGrid.swift in Sources */,
 				92C0B822285B445B007C77E1 /* SongsSearchView.swift in Sources */,
 				92C0B820285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
+				92DD9D42285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +337,7 @@
 				92DD9D40285D9883009A3F8E /* SongsGrid.swift in Sources */,
 				92C0B823285B445B007C77E1 /* SongsSearchView.swift in Sources */,
 				92C0B821285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
+				92DD9D43285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

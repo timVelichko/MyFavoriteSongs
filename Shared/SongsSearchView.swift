@@ -34,12 +34,12 @@ struct SongsSearchView: View {
     var body: some View {
         NavigationView {
             SongsGrid(songs)
-            .navigationTitle("Search")
-            .toolbar {
-                Button("\(Image(systemName: "star.fill"))", action: {
-                    
-                })
-            }
+                .navigationTitle("Search")
+                .toolbar {
+                    NavigationLink(destination: FavoriteSongsView(), label: {
+                        Text("\(Image(systemName: "star.fill"))")
+                    })
+                }
         }
         .searchable(text: $searchInput)
     }
