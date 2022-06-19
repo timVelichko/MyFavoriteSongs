@@ -10,7 +10,7 @@ import SwiftUI
 struct FavoriteSongsView: View {
     
     private let favoritesService = LocalFavoritesService(UserDefaults.standard)
-    private let model: SongsSearchModel
+    @ObservedObject private var model: SongsSearchModel
     
     init(_ model: SongsSearchModel) {
         self.model = model
@@ -19,6 +19,7 @@ struct FavoriteSongsView: View {
     var body: some View {
         listView
             .navigationTitle("favoriteSongs.title")
+            .errorAlert(error: $model.error)
     }
     
     @ViewBuilder

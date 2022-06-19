@@ -39,6 +39,7 @@ class SongsSearchModel: ObservableObject {
     @Published var songs: [Song] = []
     @Published var justStarted = true
     @Published var searchInProgress = false
+    @Published var error: Error?
     var favoriteSongs: [Song] {
         favoritesService.favoriteSongIds.map { id in
             if let existing = songs.first(where: { shown in shown.id == id }) {
@@ -66,7 +67,7 @@ class SongsSearchModel: ObservableObject {
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .failure(let error):
-                    print(error)
+                    self?.error = error
                 default: break
                 }
                 self?.searchInProgress = false
@@ -88,10 +89,10 @@ class SongsSearchModel: ObservableObject {
     
     func getSongDetails(by id: String, for song: Song) {
         songsProvider.getSong(by: id)
-            .sink(receiveCompletion: { completion in
+            .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .failure(let error):
-                    print(error)
+                    self?.error = error
                 default: break
                 }
             }, receiveValue: { songModel in

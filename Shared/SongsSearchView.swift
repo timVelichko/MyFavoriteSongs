@@ -26,6 +26,7 @@ struct SongsSearchView: View {
         .onSubmit(of: .search) {
             model.searchSongs(by: searchInput)
         }
+        .errorAlert(error: $model.error)
     }
     
     @ViewBuilder
