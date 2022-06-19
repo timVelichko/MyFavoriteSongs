@@ -30,7 +30,9 @@ struct SongsSearchView: View {
     
     @ViewBuilder
     var listView: some View {
-        if model.justStarted || (searchInput.count == 0 && model.songs.isEmpty) {
+        if model.searchInProgress {
+            ProgressView()
+        } else if model.justStarted || (searchInput.count == 0 && model.songs.isEmpty) {
             Text("songsSearch.welcomeMessage")
                 .multilineTextAlignment(.center)
                 .foregroundColor(.secondary)
