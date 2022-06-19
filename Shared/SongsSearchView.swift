@@ -7,57 +7,25 @@
 
 import SwiftUI
 
-class Song: Identifiable, ObservableObject {
-    let id: String
-    @Published var title: String?
-    @Published var artistName: String?
-    @Published var isFavorite: Bool = false
-    
-    required init(id: String, title: String? = nil,
-         artistName: String? = nil, isFavorite: Bool? = nil) {
-        self.id = id
-        self.title = title
-        self.artistName = artistName
-        if let isFavorite = isFavorite {
-            self.isFavorite = isFavorite
-        }
-    }
-    
-    convenience init(id: String, title: String? = nil,
-         artistName: String? = nil, listOfFavoriteIds: [String]) {
-        self.init(id: id,
-                  title: title,
-                  artistName: artistName,
-                  isFavorite: listOfFavoriteIds.contains(id))
-    }
-}
-
 struct SongsSearchView: View {
     
-    private var songs: [Song] = []
     @State private var searchInput: String = ""
-    
-    init() {
-        let favoritedList = LocalFavoritesService(UserDefaults.standard).favoriteSongIds
-        songs = stride(from: 0, to: 10, by: 1).map {
-            Song(id: "\($0)",
-                 title: "song \($0)",
-                 artistName: "artist \($0)",
-                 listOfFavoriteIds: favoritedList)
-        }
-    }
+    @ObservedObject private var model = SongsSearchModel()
     
     var body: some View {
         NavigationView {
-            SongsGrid(songs)
+            SongsGrid(model.songs)
                 .navigationTitle("songsSearch.title")
                 .toolbar {
-                    NavigationLink(destination: FavoriteSongsView(songs), label: {
+                    NavigationLink(destination: FavoriteSongsView(model.songs), label: {
                         Text("\(Image(systemName: "star.fill"))")
                     })
                 }
         }
         .searchable(text: $searchInput)
+        .onSubmit(of: .search) {
+            model.searchSongs(by: searchInput)
+        }
     }
 }
 

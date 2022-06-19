@@ -25,12 +25,15 @@ class ItunesWithCacheSongSearchProvider: SongSearchProvider {
     }
     
     private enum Param: String {
-        case term, id
+        case term, id, media
     }
     
     func searchSongs(for term: String) -> AnyPublisher<[SongModel], Error> {
         var urlComponents = URLComponents(string: domain + Path.search.rawValue)
-        urlComponents?.queryItems = [ URLQueryItem(name: Param.term.rawValue, value: term) ]
+        urlComponents?.queryItems = [
+            URLQueryItem(name: Param.term.rawValue, value: term),
+            URLQueryItem(name: Param.media.rawValue, value: "music")
+        ]
         guard let url = urlComponents?.url else {
             return Fail(error: ItunesError.invalidUrl).eraseToAnyPublisher()
         }
@@ -42,6 +45,7 @@ class ItunesWithCacheSongSearchProvider: SongSearchProvider {
                 self.songsCache = self.songsCache.union($0.results)
                 return $0.results
             }
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
     
@@ -65,6 +69,7 @@ class ItunesWithCacheSongSearchProvider: SongSearchProvider {
                 guard let song = $0.results.first else { throw ItunesError.songNotFound }
                 return song
             }
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
     

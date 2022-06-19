@@ -12,12 +12,12 @@ extension UserDefaults: StorageProvider {}
 
 struct SongsGrid: View {
     
-    @State private var songs: [Song] = []
+    private var songs: [Song] = []
     private let favoritesService: FavoritesService
     
     init(_ songs: [Song],
          favoritesService: FavoritesService = LocalFavoritesService(UserDefaults.standard)) {
-        self._songs = State(wrappedValue: songs)
+        self.songs = songs
         self.favoritesService = favoritesService
     }
     
@@ -52,17 +52,24 @@ struct SongCell: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 15) {
-            Image(systemName: "music.quarternote.3")
-                .resizable()
-                .foregroundColor(.gray)
-                .aspectRatio(1, contentMode: .fit)
+            AsyncImage(url: song.thumbnailUrl) { image in
+                image.resizable()
+                    .aspectRatio(1, contentMode: .fit)
+            } placeholder: {
+                Image(systemName: "music.quarternote.3")
+                    .resizable()
+                    .aspectRatio(1, contentMode: .fit)
+                    .foregroundColor(.gray)
+            }
                 .padding([.leading, .trailing], 20)
             HStack {
                 VStack(alignment: .leading) {
                     Text(song.title ?? "")
+                        .lineLimit(2)
                     Text(song.artistName ?? "")
                         .font(.footnote)
                         .foregroundColor(.secondary)
+                        .lineLimit(1)
                 }
                 Spacer()
                 Button("\(Image(systemName: song.favoriteIconName))") {
