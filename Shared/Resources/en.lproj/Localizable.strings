@@ -7,4 +7,7 @@
 */
 
 "songsSearch.title" = "Search";
+"songsSearch.empty" = "Couldn't find any song for \"%@\".";
+"songsSearch.welcomeMessage" = "Try searching for some beautiful songs!";
 "favoriteSongs.title" = "Favorites";
+"favoriteSongs.empty" = "Add some songs to Favorites and they'll appear here.";

@@ -37,6 +37,19 @@ class Song: Identifiable, ObservableObject {
 class SongsSearchModel: ObservableObject {
     
     @Published var songs: [Song] = []
+    @Published var justStarted = true
+    var favoriteSongs: [Song] {
+        favoritesService.favoriteSongIds.map { id in
+            if let existing = songs.first(where: { shown in shown.id == id }) {
+                return existing
+            } else {
+                let song = Song(id: id, isFavorite: true)
+                getSongDetails(by: id, for: song)
+                return song
+            }
+        }
+    }
+    
     private let songsProvider = ItunesWithCacheSongSearchProvider()
     private var songsSubs: Cancellable?
     private var songDetailsSubscriptions = Set<AnyCancellable>()
@@ -66,6 +79,7 @@ class SongsSearchModel: ObservableObject {
                     }
                     return song
                 }
+                self.justStarted = false
             })
     }
     
