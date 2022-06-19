@@ -8,35 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		925F76CF285F5A06004C009B /* SongSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76CE285F5A06004C009B /* SongSearchProvider.swift */; };
-		925F76D0285F5A06004C009B /* SongSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76CE285F5A06004C009B /* SongSearchProvider.swift */; };
 		925F76D2285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76D1285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift */; };
-		925F76D3285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76D1285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift */; };
 		925F76D5285F66EB004C009B /* SongsSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76D4285F66EB004C009B /* SongsSearchModel.swift */; };
-		925F76D6285F66EB004C009B /* SongsSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76D4285F66EB004C009B /* SongsSearchModel.swift */; };
 		925F76D8285F802D004C009B /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76D7285F802D004C009B /* View+Utils.swift */; };
-		925F76D9285F802D004C009B /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76D7285F802D004C009B /* View+Utils.swift */; };
-		925F76DC285F856E004C009B /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 925F76DB285F856E004C009B /* QGrid */; };
 		92C0B811285B445B007C77E1 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B810285B445B007C77E1 /* Tests_iOS.swift */; };
 		92C0B813285B445B007C77E1 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B812285B445B007C77E1 /* Tests_iOSLaunchTests.swift */; };
-		92C0B81D285B445B007C77E1 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B81C285B445B007C77E1 /* Tests_macOS.swift */; };
-		92C0B81F285B445B007C77E1 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B81E285B445B007C77E1 /* Tests_macOSLaunchTests.swift */; };
 		92C0B820285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F8285B4457007C77E1 /* MyFavoriteSongsApp.swift */; };
-		92C0B821285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F8285B4457007C77E1 /* MyFavoriteSongsApp.swift */; };
 		92C0B822285B445B007C77E1 /* SongsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */; };
-		92C0B823285B445B007C77E1 /* SongsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */; };
 		92C0B824285B445B007C77E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C0B7FA285B445B007C77E1 /* Assets.xcassets */; };
-		92C0B825285B445B007C77E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C0B7FA285B445B007C77E1 /* Assets.xcassets */; };
 		92C0B836285B6856007C77E1 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 92C0B835285B6856007C77E1 /* QGrid */; };
 		92DD9D3F285D9883009A3F8E /* SongsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D3E285D9883009A3F8E /* SongsGrid.swift */; };
-		92DD9D40285D9883009A3F8E /* SongsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D3E285D9883009A3F8E /* SongsGrid.swift */; };
 		92DD9D42285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */; };
-		92DD9D43285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */; };
 		92DD9D5A285DA357009A3F8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92DD9D5D285DA357009A3F8E /* Localizable.strings */; };
-		92DD9D5B285DA357009A3F8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92DD9D5D285DA357009A3F8E /* Localizable.strings */; };
 		92DD9D66285DA6AD009A3F8E /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D65285DA6AD009A3F8E /* FavoritesService.swift */; };
-		92DD9D67285DA6AD009A3F8E /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D65285DA6AD009A3F8E /* FavoritesService.swift */; };
 		92DD9D69285DA768009A3F8E /* LocalFavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D68285DA768009A3F8E /* LocalFavoritesService.swift */; };
-		92DD9D6A285DA768009A3F8E /* LocalFavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D68285DA768009A3F8E /* LocalFavoritesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +31,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 92C0B7FE285B445B007C77E1;
 			remoteInfo = "MyFavoriteSongs (iOS)";
-		};
-		92C0B819285B445B007C77E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 92C0B7F3285B4457007C77E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92C0B804285B445B007C77E1;
-			remoteInfo = "MyFavoriteSongs (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -65,14 +43,10 @@
 		92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsSearchView.swift; sourceTree = "<group>"; };
 		92C0B7FA285B445B007C77E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92C0B7FF285B445B007C77E1 /* MyFavoriteSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavoriteSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92C0B805285B445B007C77E1 /* MyFavoriteSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavoriteSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92C0B807285B445B007C77E1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		92C0B80C285B445B007C77E1 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C0B810285B445B007C77E1 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		92C0B812285B445B007C77E1 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		92C0B818285B445B007C77E1 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		92C0B81C285B445B007C77E1 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		92C0B81E285B445B007C77E1 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		92DD9D3E285D9883009A3F8E /* SongsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsGrid.swift; sourceTree = "<group>"; };
 		92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSongsView.swift; sourceTree = "<group>"; };
 		92DD9D5C285DA357009A3F8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -86,14 +60,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C0B836285B6856007C77E1 /* QGrid in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92C0B802285B445B007C77E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				925F76DC285F856E004C009B /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,9 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				92C0B7F7285B4457007C77E1 /* Shared */,
-				92C0B806285B445B007C77E1 /* macOS */,
 				92C0B80F285B445B007C77E1 /* Tests iOS */,
-				92C0B81B285B445B007C77E1 /* Tests macOS */,
 				92C0B800285B445B007C77E1 /* Products */,
 				925F76DA285F856E004C009B /* Frameworks */,
 			);
@@ -152,19 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				92C0B7FF285B445B007C77E1 /* MyFavoriteSongs.app */,
-				92C0B805285B445B007C77E1 /* MyFavoriteSongs.app */,
 				92C0B80C285B445B007C77E1 /* Tests iOS.xctest */,
 				92C0B818285B445B007C77E1 /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		92C0B806285B445B007C77E1 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				92C0B807285B445B007C77E1 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		92C0B80F285B445B007C77E1 /* Tests iOS */ = {
@@ -174,15 +129,6 @@
 				92C0B812285B445B007C77E1 /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		92C0B81B285B445B007C77E1 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				92C0B81C285B445B007C77E1 /* Tests_macOS.swift */,
-				92C0B81E285B445B007C77E1 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 		92DD9D56285DA339009A3F8E /* Resources */ = {
@@ -228,26 +174,6 @@
 			productReference = 92C0B7FF285B445B007C77E1 /* MyFavoriteSongs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92C0B804285B445B007C77E1 /* MyFavoriteSongs (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92C0B82B285B445B007C77E1 /* Build configuration list for PBXNativeTarget "MyFavoriteSongs (macOS)" */;
-			buildPhases = (
-				92C0B801285B445B007C77E1 /* Sources */,
-				92C0B802285B445B007C77E1 /* Frameworks */,
-				92C0B803285B445B007C77E1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MyFavoriteSongs (macOS)";
-			packageProductDependencies = (
-				925F76DB285F856E004C009B /* QGrid */,
-			);
-			productName = "MyFavoriteSongs (macOS)";
-			productReference = 92C0B805285B445B007C77E1 /* MyFavoriteSongs.app */;
-			productType = "com.apple.product-type.application";
-		};
 		92C0B80B285B445B007C77E1 /* Tests iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C0B82E285B445B007C77E1 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
@@ -277,7 +203,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				92C0B81A285B445B007C77E1 /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
@@ -295,9 +220,6 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					92C0B7FE285B445B007C77E1 = {
-						CreatedOnToolsVersion = 13.4.1;
-					};
-					92C0B804285B445B007C77E1 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					92C0B80B285B445B007C77E1 = {
@@ -327,7 +249,6 @@
 			projectRoot = "";
 			targets = (
 				92C0B7FE285B445B007C77E1 /* MyFavoriteSongs (iOS) */,
-				92C0B804285B445B007C77E1 /* MyFavoriteSongs (macOS) */,
 				92C0B80B285B445B007C77E1 /* Tests iOS */,
 				92C0B817285B445B007C77E1 /* Tests macOS */,
 			);
@@ -341,15 +262,6 @@
 			files = (
 				92C0B824285B445B007C77E1 /* Assets.xcassets in Resources */,
 				92DD9D5A285DA357009A3F8E /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92C0B803285B445B007C77E1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92C0B825285B445B007C77E1 /* Assets.xcassets in Resources */,
-				92DD9D5B285DA357009A3F8E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,23 +299,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92C0B801285B445B007C77E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92DD9D67285DA6AD009A3F8E /* FavoritesService.swift in Sources */,
-				92DD9D40285D9883009A3F8E /* SongsGrid.swift in Sources */,
-				925F76D3285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift in Sources */,
-				92C0B823285B445B007C77E1 /* SongsSearchView.swift in Sources */,
-				925F76D9285F802D004C009B /* View+Utils.swift in Sources */,
-				92C0B821285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
-				925F76D6285F66EB004C009B /* SongsSearchModel.swift in Sources */,
-				925F76D0285F5A06004C009B /* SongSearchProvider.swift in Sources */,
-				92DD9D43285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */,
-				92DD9D6A285DA768009A3F8E /* LocalFavoritesService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		92C0B808285B445B007C77E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,8 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C0B81F285B445B007C77E1 /* Tests_macOSLaunchTests.swift in Sources */,
-				92C0B81D285B445B007C77E1 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,11 +322,6 @@
 			isa = PBXTargetDependency;
 			target = 92C0B7FE285B445B007C77E1 /* MyFavoriteSongs (iOS) */;
 			targetProxy = 92C0B80D285B445B007C77E1 /* PBXContainerItemProxy */;
-		};
-		92C0B81A285B445B007C77E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92C0B804285B445B007C77E1 /* MyFavoriteSongs (macOS) */;
-			targetProxy = 92C0B819285B445B007C77E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -619,62 +507,6 @@
 			};
 			name = Release;
 		};
-		92C0B82C285B445B007C77E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2G4AD7SVVS;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.timvelichko.MyFavoriteSongs;
-				PRODUCT_NAME = MyFavoriteSongs;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		92C0B82D285B445B007C77E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2G4AD7SVVS;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.timvelichko.MyFavoriteSongs;
-				PRODUCT_NAME = MyFavoriteSongs;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		92C0B82F285B445B007C77E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -775,15 +607,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92C0B82B285B445B007C77E1 /* Build configuration list for PBXNativeTarget "MyFavoriteSongs (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92C0B82C285B445B007C77E1 /* Debug */,
-				92C0B82D285B445B007C77E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		92C0B82E285B445B007C77E1 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -816,11 +639,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		925F76DB285F856E004C009B /* QGrid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 92C0B834285B6856007C77E1 /* XCRemoteSwiftPackageReference "QGrid" */;
-			productName = QGrid;
-		};
 		92C0B835285B6856007C77E1 /* QGrid */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 92C0B834285B6856007C77E1 /* XCRemoteSwiftPackageReference "QGrid" */;
