@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925F76CF285F5A06004C009B /* SongSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76CE285F5A06004C009B /* SongSearchProvider.swift */; };
+		925F76D0285F5A06004C009B /* SongSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76CE285F5A06004C009B /* SongSearchProvider.swift */; };
+		925F76D2285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76D1285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift */; };
+		925F76D3285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F76D1285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift */; };
 		92C0B811285B445B007C77E1 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B810285B445B007C77E1 /* Tests_iOS.swift */; };
 		92C0B813285B445B007C77E1 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B812285B445B007C77E1 /* Tests_iOSLaunchTests.swift */; };
 		92C0B81D285B445B007C77E1 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0B81C285B445B007C77E1 /* Tests_macOS.swift */; };
@@ -48,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		925F76CE285F5A06004C009B /* SongSearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSearchProvider.swift; sourceTree = "<group>"; };
+		925F76D1285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesWithCacheSongSearchProvider.swift; sourceTree = "<group>"; };
 		92C0B7F8285B4457007C77E1 /* MyFavoriteSongsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteSongsApp.swift; sourceTree = "<group>"; };
 		92C0B7F9285B4457007C77E1 /* SongsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsSearchView.swift; sourceTree = "<group>"; };
 		92C0B7FA285B445B007C77E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 			children = (
 				92DD9D65285DA6AD009A3F8E /* FavoritesService.swift */,
 				92DD9D68285DA768009A3F8E /* LocalFavoritesService.swift */,
+				925F76CE285F5A06004C009B /* SongSearchProvider.swift */,
+				925F76D1285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -347,8 +355,10 @@
 			files = (
 				92DD9D66285DA6AD009A3F8E /* FavoritesService.swift in Sources */,
 				92DD9D3F285D9883009A3F8E /* SongsGrid.swift in Sources */,
+				925F76D2285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift in Sources */,
 				92C0B822285B445B007C77E1 /* SongsSearchView.swift in Sources */,
 				92C0B820285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
+				925F76CF285F5A06004C009B /* SongSearchProvider.swift in Sources */,
 				92DD9D42285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */,
 				92DD9D69285DA768009A3F8E /* LocalFavoritesService.swift in Sources */,
 			);
@@ -360,8 +370,10 @@
 			files = (
 				92DD9D67285DA6AD009A3F8E /* FavoritesService.swift in Sources */,
 				92DD9D40285D9883009A3F8E /* SongsGrid.swift in Sources */,
+				925F76D3285F5E20004C009B /* ItunesWithCacheSongSearchProvider.swift in Sources */,
 				92C0B823285B445B007C77E1 /* SongsSearchView.swift in Sources */,
 				92C0B821285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
+				925F76D0285F5A06004C009B /* SongSearchProvider.swift in Sources */,
 				92DD9D43285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */,
 				92DD9D6A285DA768009A3F8E /* LocalFavoritesService.swift in Sources */,
 			);
