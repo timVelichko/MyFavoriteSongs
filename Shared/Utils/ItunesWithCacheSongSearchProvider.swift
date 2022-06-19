@@ -17,6 +17,7 @@ class ItunesWithCacheSongSearchProvider: SongSearchProvider {
     
     private let session = URLSession(configuration: .default)
     private let domain = "https://itunes.apple.com"
+    private var songsCache = Set<SongModel>()
     
     private enum Path: String {
         case search = "/search"
@@ -37,11 +38,20 @@ class ItunesWithCacheSongSearchProvider: SongSearchProvider {
         return session.dataTaskPublisher(for: url)
             .map { $0.data }
             .decode(type: SearchResponse.self, decoder: JSONDecoder())
-            .map { $0.results }
+            .map { [unowned self] in
+                self.songsCache = self.songsCache.union($0.results)
+                return $0.results
+            }
             .eraseToAnyPublisher()
     }
     
     func getSong(by id: String) -> AnyPublisher<SongModel, Error> {
+        if let song = songsCache.first(where: { "\($0.trackId)" == id }) {
+            return Just(song)
+                .setFailureType(to: Error.self)
+                .eraseToAnyPublisher()
+        }
+        
         var urlComponents = URLComponents(string: domain + Path.getSong.rawValue)
         urlComponents?.queryItems = [ URLQueryItem(name: Param.id.rawValue, value: id) ]
         guard let url = urlComponents?.url else {

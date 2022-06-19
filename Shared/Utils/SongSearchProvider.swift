@@ -8,11 +8,15 @@
 import Foundation
 import Combine
 
-struct SongModel: Decodable {
+struct SongModel: Decodable, Hashable {
     var trackId: Int64
     var artistName: String?
     var trackName: String?
     var artworkUrl100: String?
+    
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.trackId == rhs.trackId
+    }
 }
 
 protocol SongSearchProvider {
