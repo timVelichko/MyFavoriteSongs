@@ -39,6 +39,7 @@ class SongsSearchModel: ObservableObject {
     @Published var songs: [Song] = []
     private let songsProvider = ItunesWithCacheSongSearchProvider()
     private var songsSubs: Cancellable?
+    private var songDetailsSubscriptions = Set<AnyCancellable>()
     private let favoritesService: FavoritesService
     
     init(_ favoritesService: FavoritesService = LocalFavoritesService(UserDefaults.standard)) {
@@ -66,6 +67,24 @@ class SongsSearchModel: ObservableObject {
                     return song
                 }
             })
+    }
+    
+    func getSongDetails(by id: String, for song: Song) {
+        songsProvider.getSong(by: id)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    print(error)
+                default: break
+                }
+            }, receiveValue: { songModel in
+                song.title = songModel.trackName
+                song.artistName = songModel.artistName
+                if let urlString = songModel.artworkUrl100 {
+                    song.thumbnailUrl = URL(string: urlString)
+                }
+            })
+            .store(in: &songDetailsSubscriptions)
     }
     
 }

@@ -17,7 +17,7 @@ struct SongsSearchView: View {
             SongsGrid(model.songs)
                 .navigationTitle("songsSearch.title")
                 .toolbar {
-                    NavigationLink(destination: FavoriteSongsView(model.songs), label: {
+                    NavigationLink(destination: FavoriteSongsView(model.songs, model: model), label: {
                         Text("\(Image(systemName: "star.fill"))")
                     })
                 }
