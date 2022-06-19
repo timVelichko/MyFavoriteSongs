@@ -22,6 +22,7 @@ struct SongsSearchView: View {
                     })
                 }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .searchable(text: $searchInput)
         .onSubmit(of: .search) {
             model.searchSongs(by: searchInput)
