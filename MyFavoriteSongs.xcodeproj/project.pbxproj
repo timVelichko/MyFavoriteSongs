@@ -24,6 +24,10 @@
 		92DD9D43285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */; };
 		92DD9D5A285DA357009A3F8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92DD9D5D285DA357009A3F8E /* Localizable.strings */; };
 		92DD9D5B285DA357009A3F8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92DD9D5D285DA357009A3F8E /* Localizable.strings */; };
+		92DD9D66285DA6AD009A3F8E /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D65285DA6AD009A3F8E /* FavoritesService.swift */; };
+		92DD9D67285DA6AD009A3F8E /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D65285DA6AD009A3F8E /* FavoritesService.swift */; };
+		92DD9D69285DA768009A3F8E /* LocalFavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D68285DA768009A3F8E /* LocalFavoritesService.swift */; };
+		92DD9D6A285DA768009A3F8E /* LocalFavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD9D68285DA768009A3F8E /* LocalFavoritesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,8 @@
 		92DD9D3E285D9883009A3F8E /* SongsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsGrid.swift; sourceTree = "<group>"; };
 		92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSongsView.swift; sourceTree = "<group>"; };
 		92DD9D5C285DA357009A3F8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92DD9D65285DA6AD009A3F8E /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
+		92DD9D68285DA768009A3F8E /* LocalFavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFavoritesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 				92DD9D41285D9CA5009A3F8E /* FavoriteSongsView.swift */,
 				92DD9D3E285D9883009A3F8E /* SongsGrid.swift */,
 				92C0B7FA285B445B007C77E1 /* Assets.xcassets */,
+				92DD9D64285DA697009A3F8E /* Utils */,
 				92DD9D56285DA339009A3F8E /* Resources */,
 			);
 			path = Shared;
@@ -161,6 +168,15 @@
 				92DD9D5D285DA357009A3F8E /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		92DD9D64285DA697009A3F8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				92DD9D65285DA6AD009A3F8E /* FavoritesService.swift */,
+				92DD9D68285DA768009A3F8E /* LocalFavoritesService.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,10 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DD9D66285DA6AD009A3F8E /* FavoritesService.swift in Sources */,
 				92DD9D3F285D9883009A3F8E /* SongsGrid.swift in Sources */,
 				92C0B822285B445B007C77E1 /* SongsSearchView.swift in Sources */,
 				92C0B820285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
 				92DD9D42285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */,
+				92DD9D69285DA768009A3F8E /* LocalFavoritesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +358,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DD9D67285DA6AD009A3F8E /* FavoritesService.swift in Sources */,
 				92DD9D40285D9883009A3F8E /* SongsGrid.swift in Sources */,
 				92C0B823285B445B007C77E1 /* SongsSearchView.swift in Sources */,
 				92C0B821285B445B007C77E1 /* MyFavoriteSongsApp.swift in Sources */,
 				92DD9D43285D9CA5009A3F8E /* FavoriteSongsView.swift in Sources */,
+				92DD9D6A285DA768009A3F8E /* LocalFavoritesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,36 +7,52 @@
 
 import SwiftUI
 
-struct Song: Identifiable {
-    let id = UUID()
-    let title: String?
-    let artistName: String?
-    var isFavorite: Bool = false
+class Song: Identifiable, ObservableObject {
+    let id: String
+    @Published var title: String?
+    @Published var artistName: String?
+    @Published var isFavorite: Bool = false
+    
+    required init(id: String, title: String? = nil,
+         artistName: String? = nil, isFavorite: Bool? = nil) {
+        self.id = id
+        self.title = title
+        self.artistName = artistName
+        if let isFavorite = isFavorite {
+            self.isFavorite = isFavorite
+        }
+    }
+    
+    convenience init(id: String, title: String? = nil,
+         artistName: String? = nil, listOfFavoriteIds: [String]) {
+        self.init(id: id,
+                  title: title,
+                  artistName: artistName,
+                  isFavorite: listOfFavoriteIds.contains(id))
+    }
 }
 
 struct SongsSearchView: View {
     
-    private var songs: [Song] = [
-        Song(title: "song 1", artistName: "artist 1"),
-        Song(title: "song 2", artistName: "artist 2"),
-        Song(title: "song 3", artistName: "artist 3"),
-        Song(title: "song 4", artistName: "artist 4"),
-        Song(title: "song 5", artistName: "artist 5", isFavorite: true),
-        Song(title: "song 4", artistName: "artist 4"),
-        Song(title: "song 4", artistName: "artist 4"),
-        Song(title: "song 4", artistName: "artist 4"),
-        Song(title: "song 4", artistName: "artist 4"),
-        Song(title: "song 4", artistName: "artist 4"),
-        Song(title: "song 4", artistName: "artist 4")
-    ]
+    private var songs: [Song] = []
     @State private var searchInput: String = ""
+    
+    init() {
+        let favoritedList = LocalFavoritesService(UserDefaults.standard).favoriteSongIds
+        songs = stride(from: 0, to: 10, by: 1).map {
+            Song(id: "\($0)",
+                 title: "song \($0)",
+                 artistName: "artist \($0)",
+                 listOfFavoriteIds: favoritedList)
+        }
+    }
     
     var body: some View {
         NavigationView {
             SongsGrid(songs)
                 .navigationTitle("songsSearch.title")
                 .toolbar {
-                    NavigationLink(destination: FavoriteSongsView(), label: {
+                    NavigationLink(destination: FavoriteSongsView(songs), label: {
                         Text("\(Image(systemName: "star.fill"))")
                     })
                 }
