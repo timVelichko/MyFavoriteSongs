@@ -52,13 +52,15 @@ class SongsSearchModel: ObservableObject {
         }
     }
     
-    private let songsProvider = ItunesWithCacheSongSearchProvider()
+    private let songsProvider: SongSearchProvider
     private var songsSubs: Cancellable?
     private var songDetailsSubscriptions = Set<AnyCancellable>()
     private let favoritesService: FavoritesService
     
-    init(_ favoritesService: FavoritesService = LocalFavoritesService(UserDefaults.standard)) {
+    init(_ favoritesService: FavoritesService = LocalFavoritesService(UserDefaults.standard),
+         songsProvider: SongSearchProvider = ItunesWithCacheSongSearchProvider()) {
         self.favoritesService = favoritesService
+        self.songsProvider = songsProvider
     }
     
     func searchSongs(by term: String) {
